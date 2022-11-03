@@ -1,7 +1,8 @@
 import React from 'react';
 import { useLocation } from 'react-router';
-import { Link, NavLink , useLocation} from 'react-router-dom';
+import { Link, NavLink, useLocation} from 'react-router-dom';
 import '../styles/Chatting.scss';
+import { collection, addDoc , query , orderBy, getDocs, onSnapshot} from "firebase/firestore";
 
 function Chatting() {
   const location = useLocation();
@@ -69,8 +70,9 @@ function Chatting() {
           </fieldset>
         </form>
       </footer>
-     
+
       
+
     </>
   )
 }

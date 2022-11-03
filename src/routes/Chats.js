@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import axios from 'axios';
-import Nav from './components/Nav';
+import Nav from '../components/Nav';
 import ChatList from '../components/ChatList';
 import profileImage from '../data/profileImg.json';
 import '../styles/Chats.scss';
@@ -95,4 +95,4 @@ function Chats() {
   )
 }
 
-export default chats
+export default Chats;
